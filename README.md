@@ -28,4 +28,5 @@ Utiliser ArgoCD simplifie le processus de déploiement et de gestion des applica
 Deux méthodes peuvent être utilisées :
 
 - **Via l'interface graphique :** Il est possible de déployer directement via l'interface web d'ArgoCD. Mais en premier lieu il faudra créer une connection entre ArgoCD et le repo de l'application.
+
 Pour ce faire, aller dans l'onglet Settings --> Repository --> Connect Repo
