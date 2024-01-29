@@ -31,7 +31,7 @@ Deux méthodes peuvent être utilisées :
 
 Pour ce faire, aller dans l'onglet Settings --> Repository --> Connect Repo
 
-Il faudra alors choisir :
+Il faudra alors rensigner :
 
 - La méthode de connexion
 - Le projet
@@ -39,5 +39,6 @@ Il faudra alors choisir :
 - L'utilisateur de connexion au repo
 - Le mot de passe lié à l'utilisateur
 
+Le repo est connécté, nous pouvons maintenant déployer notre application !
 
-
+Rendez vous dans l'onglet Applications --> New App
