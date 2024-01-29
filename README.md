@@ -31,7 +31,7 @@ Deux méthodes peuvent être utilisées :
 
 Pour ce faire, aller dans l'onglet Settings --> Repository --> Connect Repo
 
-Il faudra alors rensigner :
+Il faudra alors renseigner :
 
 - La méthode de connexion
 - Le projet
@@ -42,3 +42,15 @@ Il faudra alors rensigner :
 Le repo est connécté, nous pouvons maintenant déployer notre application !
 
 Rendez vous dans l'onglet Applications --> New App
+
+Renseignez les informations suivntes :
+
+- Le nom du déploiement
+- Le nom du projet
+- La source du repo
+- La branche sur laquelle la chart helm est stockée
+- Le chemin jusqu'à la chart helm
+- L'url du cluster kubernetes
+- Le namespace (attention à noter le même que celui dans votre fichier !)
+
+Créez votre application. Le déploiement va alors s'effectuer.
