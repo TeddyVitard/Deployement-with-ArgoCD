@@ -23,3 +23,9 @@ ArgoCD est un outil de déploiement continu (CD) open source conçu pour automat
 
 Utiliser ArgoCD simplifie le processus de déploiement et de gestion des applications sur Kubernetes, offrant ainsi une solution robuste et fiable pour les équipes DevOps.
 
+## Comment déployer avec ArgoCD ?
+
+Deux méthodes peuvent être utilisées :
+
+- **Via l'interface graphique :** Il est possible de déployer directement via l'interface web d'ArgoCD. Mais en premier lieu il faudra créer une connection entre ArgoCD et le repo de l'application.
+Pour ce faire, aller dans l'onglet Settings --> Repository --> Connect Repo
