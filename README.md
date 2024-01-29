@@ -92,5 +92,10 @@ spec:
     path: 'chemin_vers_chart_helm'
   destination:
     server: https://kubernetes.default.svc
-    namespace: 'nom du namespace'
+    namespace: 'nom_du_namespace'
+```
+
+Une fois le fichier créé, utiliser cette commande pour le déployer :
+```shell
+kubectl apply -f nom_du_fichier.yaml
 ```
