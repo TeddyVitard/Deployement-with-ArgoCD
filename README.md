@@ -7,6 +7,8 @@ Ce TOS a pour objectif d'expliquer le fonctionnement d'ArgoCD et de présenter d
 
 ArgoCD est un outil de déploiement continu (CD) open source conçu pour automatiser le déploiement des applications Kubernetes. En tant que partie intégrante du paysage des outils DevOps, ArgoCD simplifie et sécurise le déploiement des applications sur des clusters Kubernetes en s'appuyant sur des définitions déclaratives stockées dans des dépôts Git.
 
+![ArgoCD](https://www.google.com/url?sa=i&url=https%3A%2F%2Fsdbrett.com%2Fpost%2F2021-06-08-argocd-overview%2F&psig=AOvVaw3IiKTefndlAgGUIZwCeph8&ust=1706605892469000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODow8OggoQDFQAAAAAdAAAAABAD)
+
 ## Utilité d'ArgoCD
 
 - **Déploiement Automatisé :** ArgoCD automatise le processus de déploiement des applications sur des clusters Kubernetes, réduisant ainsi les erreurs manuelles et accélérant les déploiements.
