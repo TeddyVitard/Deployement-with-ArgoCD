@@ -62,11 +62,35 @@ Vous pourrez alors accéder aux détails de l'application. Il est également pos
 Il faudra évidemment qu'une connexion soit effective entre ArgoCD et le repo afin de pouvoir permettre le déploiement. 
 
 Pour connecter le repo à ArgoCD en CLI :
+
+- On récupère l'ip du service
 ```shell
 kubectl -n argocd get svc
 ```
-On peut alors ajouter notre repo :
+- On peut alors ajouter notre repo :
 ```shell
 argocd  login  IPDUSERVICE:80
 argocd  repo  add  LIEN DU REPO  --username  username  --password  password
+```
+
+Il va maintenant falloir créer un fichier yaml permettant de déployer ce qui se trouve dans le repo. 
+
+Voici un exemple :
+```shell
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: 'nom_du_deploiement'
+  namespace: 'namespace_pour_argocd'
+spec:
+  project: default
+  syncPolicy:
+    automated: {}
+  source:
+    repoURL: 'url_du_repo'
+    targetRevision: 'branche_de_deploiement'
+    path: 'chemin_vers_chart_helm'
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: 'nom du namespace'
 ```
