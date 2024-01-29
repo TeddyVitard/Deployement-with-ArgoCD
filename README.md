@@ -54,3 +54,19 @@ Renseignez les informations suivntes :
 - Le namespace (attention à noter le même que celui dans votre fichier !)
 
 Créez votre application. Le déploiement va alors s'effectuer.
+
+Vous pourrez alors accéder aux détails de l'application. Il est également possible de déployer plusieurs applications de cette manière.
+
+- **Via l'infra as code :** Vous pouvez déployer vos applications directement depuis votre cluster kubernetes via un fichier yaml qui permettra le déploiement via ArgoCD.
+
+Il faudra évidemment qu'une connexion soit effective entre ArgoCD et le repo afin de pouvoir permettre le déploiement. 
+
+Pour connecter le repo à ArgoCD en CLI :
+```shell
+kubectl -n argocd get svc
+```
+On peut alors ajouter notre repo :
+```shell
+argocd  login  IPDUSERVICE:80
+argocd  repo  add  LIEN DU REPO  --username  username  --password  password
+```
