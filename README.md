@@ -99,3 +99,4 @@ Une fois le fichier créé, utiliser cette commande pour le déployer :
 ```shell
 kubectl apply -f nom_du_fichier.yaml
 ```
+En allant sur l'interface web d'ArgoCD, vous pourrez constater que l'applicaton est bien déployée.
