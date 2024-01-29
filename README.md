@@ -31,4 +31,13 @@ Deux méthodes peuvent être utilisées :
 
 Pour ce faire, aller dans l'onglet Settings --> Repository --> Connect Repo
 
+Il faudra alors choisir :
+
+- La méthode de connexion
+- Le projet
+- L'url du repo
+- L'utilisateur de connexion au repo
+- Le mot de passe lié à l'utilisateur
+
+
 
